@@ -1,0 +1,13 @@
+version: '3.0'
+
+services:
+  web:
+    build: .
+    ports:
+    - "3000:80"
+    networks:
+    - web-network
+
+networks:
+  web-network:
+    driver: bridge

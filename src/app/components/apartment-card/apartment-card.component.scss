@@ -1,0 +1,38 @@
+.card {
+  margin: 24px;
+  width: 360px;
+  height: 420px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04), 0 8px 24px 0 rgba(0, 0, 0, 0.02);
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.04), 0 8px 24px 0 rgba(0, 0, 0, 0.02);
+  }
+}
+
+.info {
+  padding: 12px;
+}
+
+.id {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0 0 12px 0;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.details {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.54);
+  margin: 24px 0 0 0;
+}
+
+.additionals {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.54);
+}

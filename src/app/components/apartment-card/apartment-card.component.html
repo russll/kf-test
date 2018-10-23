@@ -1,0 +1,20 @@
+<div class="card">
+  <a href="apartments/{{apartment.url}}">
+    <img width="360" src="{{apartment.photo}}" />
+  </a>
+  <div class="info">
+    <div class="id">#{{apartment.id}}</div>
+
+    <a class="title" href="apartments/{{apartment.url}}">
+      {{apartment.city}}, {{apartment.street}}, {{apartment.house}}
+    </a>
+
+    <div class="details">
+      {{apartment.floor}} этаж, {{apartment.square}} м²
+    </div>
+
+    <div class="additionals">
+      Комнат: {{apartment.roomCount}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<main>
+  <app-navigation></app-navigation>
+  <div>
+    <h1>Квартиры:</h1>
+  </div>
+  <div class="filters">
+    <div class="filter-item">
+      Площадь:
+      <label>
+        <input type="number" [(ngModel)]="minSquare" placeholder="от" />
+      </label>
+      <label>
+        <input type="number" [(ngModel)]="maxSquare" placeholder="до" />
+      </label>
+    </div>
+    <div class="filter-item">
+      Этаж:
+      <label>
+        <input type="number" [(ngModel)]="minFloor" placeholder="от" />
+      </label>
+      <label>
+        <input type="number" [(ngModel)]="maxFloor" placeholder="до" />
+      </label>
+    </div>
+    <div class="filter-item">
+      Количество комнат:
+      <label>
+        <input type="number" [(ngModel)]="minRooms" placeholder="от" />
+      </label>
+      <label>
+        <input type="number" [(ngModel)]="maxRooms" placeholder="до" />
+      </label>
+    </div>
+  </div>
+  <div>
+    <button class="filter-button" (click)="getApartments()">Показать</button>
+    <button class="filter-button" (click)="resetFilters()">Очистить</button>
+  </div>
+  <div class="apartments-list">
+    <app-apartment-card *ngFor="let apartment of apartments" [apartment]="apartment"></app-apartment-card>
+  </div>
+</main>
