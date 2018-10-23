@@ -1,11 +1,11 @@
 <div class="card">
-  <a href="apartments/{{apartment.url}}">
+  <a routerLink="apartments/{{apartment.url}}">
     <img width="360" src="{{apartment.photo}}" />
   </a>
   <div class="info">
     <div class="id">#{{apartment.id}}</div>
 
-    <a class="title" href="apartments/{{apartment.url}}">
+    <a class="title" routerLink="apartments/{{apartment.url}}">
       {{apartment.city}}, {{apartment.street}}, {{apartment.house}}
     </a>
 
